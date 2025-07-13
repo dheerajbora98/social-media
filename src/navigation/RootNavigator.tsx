@@ -38,7 +38,7 @@ const AuthStack = () => {
 
 const HomeStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="HomeFeed" component={HomeScreen} options={{ headerShown: false }} />
       <Stack.Screen name="PostDetail" component={PostDetailScreen} options={{ title: "Post" }} />
       <Stack.Screen name="UserProfile" component={UserProfileScreen} options={{ title: "Profile" }} />
@@ -48,7 +48,7 @@ const HomeStack = () => {
 
 const ProfileStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="MyProfile" component={ProfileScreen} options={{ headerShown: false }} />
       <Stack.Screen name="Settings" component={SettingsScreen} />
       <Stack.Screen name="Analytics" component={AnalyticsScreen} />
